@@ -1,2 +1,2 @@
 # denoter
-Definitely Not Twitter
+Definitely Not a twitter clone
