@@ -1,15 +1,15 @@
 const Dropdown = (props) => {
-  const { options, selected } = props;
+  const { options, selected, type } = props;
 
-  const selectedValue = "Default";
+  const selectedValue = "DEFAULT";
   const placeholderClass =
-    selectedValue === "Default" ? "text-light-negative text-opacity-40" : "";
+    selectedValue === "DEFAULT" ? "text-light-negative text-opacity-40" : "";
 
   return (
     <div className="relative w-full">
       <select
         name={props.name}
-        className={`${placeholderClass} bg-transparent border-light-negative border-opacity-20 border-2 py-3 pl-14 w-full rounded-md text-md peer outline-none focus:outline-none focus:border-light-highlight`}
+        className={`${placeholderClass} bg-transparent border-light-negative dark:text-dark-negative border-opacity-20 border-2 py-3 pl-14 w-full rounded-md text-md peer outline-none focus:outline-none focus:border-highlight`}
       >
         {options &&
           options.map((opt) => (
@@ -18,7 +18,7 @@ const Dropdown = (props) => {
             </option>
           ))}
       </select>
-      <div className="flex flex-row items-center absolute h-full pl-4 inset-0 w-fit peer-focus:fill-light-highlight peer-focus:opacity-100 fill-light-negative opacity-40">
+      <div className="flex flex-row items-center absolute h-full pl-4 inset-0 w-fit peer-focus:fill-highlight peer-focus:opacity-100 fill-light-negative dark:fill-dark-negative opacity-40">
         {props.icon}
       </div>
     </div>

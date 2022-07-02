@@ -8,13 +8,13 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-import { MainLogo } from "../components/logo/Logo";
+import { MainLogo } from "../components/icons/Logo";
 import Button from "../components/form/Button";
 
 const LoginPage = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
-      <div className="flex flex-col items-center justify-center gap-8 w-1/3 mx-auto bg-light-main py-16 rounded-md shadow-lg">
+      <div className="flex flex-col items-center justify-center gap-8 w-1/3 mx-auto dark:bg-dark-main bg-light-main py-16 rounded-md shadow-lg">
         <MainLogo />
         <form className="flex flex-col items-center gap-4 cursor-default mt-4 w-2/3">
           <Input

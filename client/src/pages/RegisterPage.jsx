@@ -5,10 +5,10 @@ import { AiFillCalendar } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { BsGenderFemale } from "react-icons/bs";
 
-import { genderOption } from "../options"
+import { genderOption } from "../data/options"
 
 import Button from "../components/form/Button";
-import { MainLogo } from "../components/logo/Logo";
+import { MainLogo } from "../components/icons/Logo";
 import Dropdown from "../components/form/Dropdown";
 
 const RegisterPage = () => {
