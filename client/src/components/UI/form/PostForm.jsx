@@ -5,12 +5,12 @@ import GifIcon from "../../icons/GifIcon";
 import { useState } from "react";
 import { dummyImages } from "../../../data/dummy-data.js";
 import ImageGrid from "../image/ImageGrid";
+import ImageButton from "../../form/ImageButton";
 
 const PostForm = () => {
   const [imageList, setImageList] = useState([]);
 
   return (
-
     <div className="bg-light-main rounded-md shadow-lg gap-8 flex flex-row p-8">
       <img
         src="https://cdn0-production-images-kly.akamaized.net/kHTgvWOsA9q6cSeYIn_gu4QORys=/1200x900/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/1502851/original/072728300_1486650977-magikarp-know_your_meme.jpg"
@@ -31,8 +31,12 @@ const PostForm = () => {
         )}
         <div className="flex flex-row justify-between">
           <div className="flex flex-row items-center gap-4">
-            <BsImageFill className="fill-light-negative h-7 w-auto cursor-pointer opacity-75 hover:opacity-90" />
-            <GifIcon className="fill-light-negative-main h-7 opacity-75 hover:opacity-90 cursor-pointer" />
+            <ImageButton>
+              <BsImageFill className="fill-light-negative h-7 w-auto cursor-pointer opacity-75 hover:opacity-90" />
+            </ImageButton>
+            <ImageButton>
+              <GifIcon className="fill-light-negative-main h-7 opacity-75 hover:opacity-90 cursor-pointer" />
+            </ImageButton>
           </div>
           <Button size="SMALL">Post</Button>
         </div>

@@ -6,7 +6,7 @@ const UserContext = createContext({
 });
 
 const ContextProvider = (props) => {
-  const [user, setUser] = useState(1);
+  const [user, setUser] = useState("");
 
   return (
     <div className="">

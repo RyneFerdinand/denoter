@@ -6,7 +6,7 @@ const ImageGrid = (props) => {
   const { type, images } = props;
 
   const count = images.length;
-  const [imageOverlay, setImageOverlay] = useState(true);
+  const [imageOverlay, setImageOverlay] = useState(false);
   const [selectedImage, setSelectedImage] = useState(-1);
   const gridClass = [];
   const rounded = [];

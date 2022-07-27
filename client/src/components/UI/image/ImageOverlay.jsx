@@ -25,7 +25,7 @@ const ImageOverlay = (props) => {
   return createPortal(
     <div className="fixed h-screen w-screen flex items-center justify-center bg-black bg-opacity-75 z-10">
       <button className="absolute right-5 top-5" onClick={closeOverlayHandler}>
-        <IoMdClose className="fill-light-main opacity-75 hover:opacity-100 w-10 h-10" />
+        <IoMdClose className="fill-light-main opacity-75 w-10 h-10 bg-opacity-0 bg-light-main rounded-full hover:bg-opacity-50 p-1 transition-opacity duration-75" />
       </button>
       <div className="w-4/6">
         <ItemsCarousel
